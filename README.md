@@ -22,7 +22,7 @@ rest_client.get_resource_account_password("RemoteServerResource", "AccountName")
   
 ```ruby
 # Fetch Password Using Rest Client with Attributes and Data Bag
-APIKey = (search(:admins, "id:#{node.name}").first)["api_key"]
+APIKey = (search(:client_keys, "id:#{node.name}").first)["api_key"]
 rest_client = PasswordManagerProRestClient.new(node['PasswordManagerProRestClient']['PMPServer'], node['PasswordManagerProRestClient']['api_key'], node['PasswordManagerProRestClient']['port'], true)
 rest_client.get_resource_account_password("RemoteServerResource", "AccountName")
 ```
