@@ -2,9 +2,6 @@
 driver:
   name: vagrant
 
-verifier:
-  name: pester
-
 platforms:
   - name: win-2012r2-standard-amd64-nocm
     transport:
