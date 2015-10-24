@@ -7,4 +7,4 @@
 chef_gem 'PasswordManagerProRestClient' do
   version '0.0.3pre'
 end
-require PasswordManagerProRestClient
+require 'PasswordManagerProRestClient'
